@@ -1,55 +1,10 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <!-- Meta Tags الأساسية -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <!-- SEO Meta Tags -->
-    <title>نتائج المباريات المباشرة اليوم - البث الحي والترتيبات | movi.best</title>
-    <meta name="description" content="تابع نتائج مباريات كرة القدم المباشرة اليوم، البث الحي، الترتيبات، الأهداف والإحصائيات في الوقت الفعلي من جميع الدوريات الأوروبية والعربية">
-    <meta name="keywords" content="نتائج المباريات، البث المباشر، كرة القدم، نتائج الدوري، ترتيبات الفرق، نتائج البريميير ليج، نتائج دوري الأبطال">
-    <meta name="author" content="movi.best">
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta name="googlebot" content="index, follow">
-    <meta name="bingbot" content="index, follow">
-    <meta name="revisit-after" content="1 days">
-    <meta name="language" content="ar">
-    <meta name="copyright" content="© 2026 movi.best - جميع الحقوق محفوظة">
-
-    <!-- Open Graph Tags (للمشاركة في السوشيال ميديا) -->
-    <meta property="og:title" content="نتائج المباريات المباشرة اليوم | movi.best">
-    <meta property="og:description" content="تابع أحدث نتائج مباريات كرة القدم والبث المباشر والترتيبات الحية">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://movi.best/">
-    <meta property="og:site_name" content="movi.best">
-    <meta property="og:locale" content="ar_SA">
-    
-    <!-- Twitter Card Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="نتائج المباريات المباشرة اليوم">
-    <meta name="twitter:description" content="تابع أحدث نتائج المباريات والبث الحي">
-    <meta name="twitter:creator" content="@movi_best">
-
-    <!-- Canonical Tag -->
-    <link rel="canonical" href="https://movi.best/">
-
-    <!-- Alternate Tags لـ SEO -->
-    <link rel="alternate" hreflang="ar" href="https://movi.best/">
-    <link rel="alternate" hreflang="en" href="https://movi.best/en/">
-
-    <!-- DNS Prefetch -->
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://sports.bzzoiro.com">
-
-    <!-- Preconnect -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap">
-
+    <title>نتائج المباريات المباشرة - 3 مصادر مجانية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -57,23 +12,12 @@
             box-sizing: border-box;
         }
 
-        :root {
-            --primary: #1e3a8a;
-            --secondary: #3b82f6;
-            --accent: #fbbf24;
-            --dark: #0f172a;
-            --light: #f8fafc;
-            --green: #10b981;
-            --red: #ef4444;
-            --text: #1e293b;
-        }
-
         body {
             font-family: 'Cairo', sans-serif;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
-            color: var(--text);
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
             min-height: 100vh;
             padding: 20px;
+            color: #fff;
         }
 
         .container {
@@ -81,100 +25,169 @@
             margin: 0 auto;
         }
 
-        /* Header */
         .header {
             text-align: center;
-            margin-bottom: 40px;
-            color: white;
-            animation: slideDown 0.6s ease-out;
+            padding: 30px 0;
+            position: relative;
         }
 
         .header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            font-size: 2.8rem;
+            background: linear-gradient(135deg, #f7971e, #ffd200);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .header p {
             font-size: 1.1rem;
-            opacity: 0.9;
+            opacity: 0.8;
+            margin-top: 10px;
         }
 
-        /* Navigation */
+        .status-bar {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 15px 0 25px;
+            padding: 15px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .status-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.85rem;
+            padding: 5px 15px;
+            border-radius: 20px;
+            background: rgba(255,255,255,0.05);
+        }
+
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .status-dot.online {
+            background: #2ed573;
+            animation: pulse 2s infinite;
+        }
+
+        .status-dot.offline {
+            background: #ff4757;
+        }
+
+        .status-dot.checking {
+            background: #ffd200;
+            animation: pulse 0.5s infinite;
+        }
+
         .nav-tabs {
             display: flex;
             gap: 10px;
-            margin-bottom: 30px;
             flex-wrap: wrap;
             justify-content: center;
-            animation: slideDown 0.6s ease-out 0.1s both;
+            margin: 25px 0 20px;
         }
 
         .nav-tab {
             padding: 10px 20px;
             background: rgba(255,255,255,0.1);
             border: 2px solid transparent;
-            color: white;
             border-radius: 8px;
             cursor: pointer;
             transition: all 0.3s;
             font-weight: 600;
+            color: #fff;
+            font-family: 'Cairo', sans-serif;
         }
 
-        .nav-tab:hover,
-        .nav-tab.active {
-            background: var(--accent);
-            color: var(--dark);
-            border-color: var(--accent);
+        .nav-tab:hover, .nav-tab.active {
+            background: #ffd200;
+            color: #000;
+            border-color: #ffd200;
         }
 
-        /* Controls */
         .controls {
             display: flex;
             gap: 15px;
-            margin-bottom: 30px;
             justify-content: center;
             flex-wrap: wrap;
-            animation: slideUp 0.6s ease-out 0.1s both;
+            margin: 20px 0 30px;
         }
 
         .btn {
-            padding: 12px 24px;
+            padding: 12px 30px;
             border: none;
             border-radius: 8px;
-            cursor: pointer;
             font-size: 1rem;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: 'Cairo', sans-serif;
         }
 
         .btn-primary {
-            background: var(--accent);
-            color: var(--dark);
-            box-shadow: 0 4px 15px rgba(251, 191, 36, 0.3);
+            background: #ffd200;
+            color: #000;
         }
 
         .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(251, 191, 36, 0.4);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 210, 0, 0.4);
         }
 
-        /* Filter */
+        .btn-success {
+            background: #2ed573;
+            color: #fff;
+        }
+
+        .btn-success:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(46, 213, 115, 0.4);
+        }
+
+        .btn-danger {
+            background: #ff4757;
+            color: #fff;
+        }
+
+        .btn-danger:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 71, 87, 0.4);
+        }
+
+        .source-indicator {
+            text-align: center;
+            padding: 8px;
+            background: rgba(255,210,0,0.1);
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(255,210,0,0.2);
+        }
+
+        .source-indicator .source-name {
+            color: #ffd200;
+            font-weight: 700;
+        }
+
         .filter-section {
             background: rgba(255,255,255,0.95);
             padding: 20px;
             border-radius: 12px;
             margin-bottom: 30px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            animation: slideUp 0.6s ease-out 0.2s both;
         }
 
         .filter-section input {
             width: 100%;
-            padding: 12px;
-            border: 2px solid var(--secondary);
+            padding: 12px 20px;
+            border: 2px solid #302b63;
             border-radius: 8px;
             font-size: 1rem;
             font-family: 'Cairo', sans-serif;
@@ -183,197 +196,184 @@
 
         .filter-section input:focus {
             outline: none;
-            border-color: var(--accent);
-            box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.1);
+            border-color: #ffd200;
+            box-shadow: 0 0 0 3px rgba(255, 210, 0, 0.2);
         }
 
-        /* Matches Grid */
         .matches-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 20px;
-            animation: slideUp 0.6s ease-out 0.3s both;
+            gap: 25px;
         }
 
-        /* Match Card */
         .match-card {
-            background: white;
-            border-radius: 12px;
+            background: #fff;
+            border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
-            transition: all 0.3s ease;
-            animation: popIn 0.4s ease-out;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            transition: all 0.4s ease;
+            animation: fadeIn 0.5s ease-out;
         }
 
         .match-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 15px 50px rgba(255, 210, 0, 0.15);
         }
 
         .match-header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-            padding: 15px;
+            background: linear-gradient(135deg, #302b63, #24243e);
+            padding: 15px 20px;
+            color: #fff;
             text-align: center;
         }
 
         .match-league {
-            font-size: 0.85rem;
-            opacity: 0.9;
-            font-weight: 600;
+            font-size: 0.9rem;
+            font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
+            color: #ffd200;
         }
 
         .match-date {
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             opacity: 0.8;
             margin-top: 5px;
         }
 
         .match-content {
             padding: 25px;
+            color: #1a1a2e;
         }
 
         .teams-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 20px;
-            gap: 15px;
+            gap: 10px;
         }
 
         .team {
-            flex: 1;
             text-align: center;
+            flex: 1;
+        }
+
+        .team-logo {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 10px;
+            background: linear-gradient(135deg, #f7971e, #ffd200);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #1a1a2e;
         }
 
         .team-name {
             font-weight: 700;
             font-size: 1rem;
-            margin-bottom: 8px;
-            color: var(--text);
-        }
-
-        .team-logo {
-            width: 50px;
-            height: 50px;
-            margin: 0 auto 8px;
-            background: linear-gradient(135deg, var(--secondary), var(--accent));
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.5rem;
-            font-weight: 700;
+            color: #1a1a2e;
         }
 
         .score-container {
             display: flex;
-            justify-content: center;
             align-items: center;
             gap: 15px;
-            margin: 15px 0;
+            padding: 0 10px;
         }
 
         .score {
-            font-size: 3rem;
-            font-weight: 800;
-            color: var(--primary);
+            font-size: 2.8rem;
+            font-weight: 900;
+            color: #302b63;
+            min-width: 40px;
         }
 
         .vs-text {
-            color: var(--secondary);
+            color: #999;
             font-weight: 700;
-            font-size: 0.85rem;
-            text-transform: uppercase;
+            font-size: 0.8rem;
         }
 
         .match-status {
+            margin-top: 20px;
+            padding: 12px;
+            border-radius: 8px;
             text-align: center;
-            padding: 10px;
-            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.05));
-            border-radius: 6px;
-            margin-top: 15px;
-            border-left: 4px solid var(--green);
+            background: #f0f0f0;
         }
 
         .status-badge {
             display: inline-block;
-            padding: 6px 12px;
-            background: var(--green);
-            color: white;
+            padding: 6px 16px;
             border-radius: 20px;
+            font-weight: 700;
             font-size: 0.85rem;
-            font-weight: 600;
             text-transform: uppercase;
-            animation: pulse 2s infinite;
+            background: #2ed573;
+            color: #fff;
         }
 
         .status-live {
-            background: var(--red);
+            background: #ff4757;
+            animation: pulse 1.5s infinite;
         }
 
         .status-time {
-            font-size: 0.9rem;
-            color: var(--green);
             margin-top: 8px;
+            font-size: 0.9rem;
             font-weight: 600;
         }
 
-        /* Loading State */
         .loading {
             text-align: center;
-            padding: 60px 20px;
-            color: white;
+            padding: 80px 20px;
+            grid-column: 1 / -1;
         }
 
         .spinner {
-            width: 50px;
-            height: 50px;
-            border: 4px solid rgba(255,255,255,0.3);
-            border-top-color: var(--accent);
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 20px;
+            border: 4px solid rgba(255,255,255,0.1);
+            border-top-color: #ffd200;
             border-radius: 50%;
             animation: spin 1s linear infinite;
-            margin: 0 auto 20px;
         }
 
-        /* Error State */
         .error-message {
-            background: rgba(239, 68, 68, 0.1);
-            border: 2px solid var(--red);
-            border-radius: 8px;
-            padding: 20px;
-            color: var(--red);
+            background: rgba(255, 71, 87, 0.2);
+            border: 2px solid #ff4757;
+            border-radius: 12px;
+            padding: 30px;
             text-align: center;
+            grid-column: 1 / -1;
+            color: #ff4757;
+        }
+
+        .empty-state {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .empty-state h2 {
+            font-size: 2rem;
             margin: 20px 0;
         }
 
-        /* Animations */
-        @keyframes slideDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            opacity: 0.7;
         }
 
-        @keyframes slideUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes popIn {
+        @keyframes fadeIn {
             from {
                 opacity: 0;
                 transform: scale(0.9);
@@ -385,55 +385,20 @@
         }
 
         @keyframes pulse {
-            0%, 100% {
-                opacity: 1;
-            }
-            50% {
-                opacity: 0.7;
-            }
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
         }
 
         @keyframes spin {
-            to {
-                transform: rotate(360deg);
-            }
+            to { transform: rotate(360deg); }
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
-            .header h1 {
-                font-size: 1.8rem;
-            }
-
-            .matches-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .controls {
-                flex-direction: column;
-            }
-
-            .btn {
-                width: 100%;
-            }
-
-            .score {
-                font-size: 2.5rem;
-            }
-
-            .teams-container {
-                flex-direction: column;
-            }
-        }
-
-        /* Footer */
-        .footer {
-            text-align: center;
-            margin-top: 50px;
-            padding-top: 30px;
-            border-top: 2px solid rgba(255,255,255,0.1);
-            color: rgba(255,255,255,0.8);
-            font-size: 0.9rem;
+            .header h1 { font-size: 1.8rem; }
+            .matches-grid { grid-template-columns: 1fr; }
+            .teams-container { flex-direction: column; }
+            .score { font-size: 2.2rem; }
+            .status-bar { flex-direction: column; align-items: center; }
         }
     </style>
 </head>
@@ -441,169 +406,288 @@
     <div class="container">
         <header class="header">
             <h1>⚽ نتائج المباريات المباشرة</h1>
-            <p>تابع أحدث النتائج والترتيبات في الوقت الفعلي</p>
+            <p>3 مصادر مجانية - إذا سقط واحد يعمل الثاني تلقائياً</p>
         </header>
 
-        <!-- Navigation Tabs -->
+        <!-- حالة المصادر -->
+        <div class="status-bar" id="statusBar">
+            <div class="status-item">
+                <span class="status-dot checking" id="dot1"></span>
+                <span>LiveScore MCP</span>
+                <span id="status1" style="font-size:0.8rem;opacity:0.7;">جاري التحقق...</span>
+            </div>
+            <div class="status-item">
+                <span class="status-dot checking" id="dot2"></span>
+                <span>SportScore</span>
+                <span id="status2" style="font-size:0.8rem;opacity:0.7;">جاري التحقق...</span>
+            </div>
+            <div class="status-item">
+                <span class="status-dot checking" id="dot3"></span>
+                <span>API-Football</span>
+                <span id="status3" style="font-size:0.8rem;opacity:0.7;">جاري التحقق...</span>
+            </div>
+        </div>
+
+        <!-- المصدر النشط -->
+        <div class="source-indicator" id="sourceIndicator">
+            🔗 المصدر النشط: <span class="source-name" id="activeSource">جاري التحميل...</span>
+        </div>
+
         <nav class="nav-tabs">
-            <button class="nav-tab active" onclick="filterByLeague('all')">📊 الكل</button>
-            <button class="nav-tab" onclick="filterByLeague('champions-league')">🏆 دوري الأبطال</button>
-            <button class="nav-tab" onclick="filterByLeague('premier-league')">🇬🇧 البريميير</button>
-            <button class="nav-tab" onclick="filterByLeague('la-liga')">🇪🇸 لا ليجا</button>
-            <button class="nav-tab" onclick="filterByLeague('serie-a')">🇮🇹 سيري أ</button>
-            <button class="nav-tab" onclick="filterByLeague('saudi')">🇸🇦 السعودي</button>
-            <button class="nav-tab" onclick="filterByLeague('egyptian')">🇪🇬 المصري</button>
+            <button class="nav-tab active" data-league="all">📊 الكل</button>
+            <button class="nav-tab" data-league="champions">🏆 دوري الأبطال</button>
+            <button class="nav-tab" data-league="premier">🇬🇧 البريميير</button>
+            <button class="nav-tab" data-league="laliga">🇪🇸 لا ليجا</button>
+            <button class="nav-tab" data-league="seriea">🇮🇹 سيري أ</button>
+            <button class="nav-tab" data-league="saudi">🇸🇦 السعودي</button>
+            <button class="nav-tab" data-league="egypt">🇪🇬 المصري</button>
         </nav>
 
         <div class="controls">
             <button class="btn btn-primary" onclick="loadMatches()">🔄 تحديث</button>
-            <button class="btn btn-primary" onclick="toggleAutoRefresh()">⏱️ تحديث تلقائي</button>
+            <button class="btn btn-success" onclick="toggleAutoRefresh()">⏱️ تحديث تلقائي</button>
         </div>
 
         <div class="filter-section">
-            <input 
-                type="text" 
-                id="searchInput" 
-                placeholder="🔍 ابحث عن فريق أو دوري..." 
-                onkeyup="filterMatches()"
-            >
+            <input type="text" id="searchInput" placeholder="🔍 ابحث عن فريق أو دوري..." onkeyup="filterMatches()">
         </div>
 
         <div id="matchesContainer" class="matches-grid">
-            <div class="loading" style="grid-column: 1 / -1;">
+            <div class="loading">
                 <div class="spinner"></div>
-                <p>جاري تحميل المباريات...</p>
+                <p>جاري تحميل المباريات من جميع المصادر...</p>
             </div>
         </div>
 
         <footer class="footer">
-            <p>© 2026 movi.best - جميع الحقوق محفوظة | <a href="/privacy" style="color: inherit; text-decoration: none;">سياسة الخصوصية</a> | <a href="/terms" style="color: inherit; text-decoration: none;">شروط الاستخدام</a></p>
+            <p>© 2026 جميع الحقوق محفوظة | مصادر مجانية: LiveScore MCP | SportScore | API-Football</p>
         </footer>
     </div>
 
-    <!-- Schema.org - JSON-LD -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "movi.best - نتائج المباريات المباشرة",
-        "url": "https://movi.best",
-        "description": "موقع نتائج مباريات كرة القدم المباشرة والبث الحي والترتيبات",
-        "image": "https://movi.best/logo.png",
-        "sameAs": [
-            "https://twitter.com/movi_best",
-            "https://facebook.com/movibest"
-        ],
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": {
-                "@type": "EntryPoint",
-                "urlTemplate": "https://movi.best/?search={search_term_string}"
-            },
-            "query-input": "required name=search_term_string"
-        }
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "movi.best",
-        "url": "https://movi.best",
-        "logo": "https://movi.best/logo.png",
-        "description": "موقع نتائج المباريات والبث المباشر لكرة القدم",
-        "sameAs": [
-            "https://twitter.com/movi_best",
-            "https://facebook.com/movibest"
-        ],
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "contactType": "Customer Support",
-            "email": "support@movi.best"
-        }
-    }
-    </script>
-
     <script>
-        const API_BASE = 'https://sports.bzzoiro.com/api/events/';
-        const API_HEADERS = {
-            'Authorization': 'Token 12b9681586c1a20911eec4ee9e9edd4e'
-        };
+        // ===== قائمة المصادر المجانية (مع Fallback تلقائي) =====
+        const SOURCES = [
+            {
+                name: 'LiveScore MCP',
+                url: 'https://livescoremcp.com/api/get_live_scores',
+                type: 'json',
+                priority: 1,
+                parser: (data) => {
+                    // تنسيق بيانات LiveScore MCP
+                    if (data && data.matches) {
+                        return data.matches.map(m => ({
+                            home_team: { name: m.home_team || 'فريق' },
+                            away_team: { name: m.away_team || 'فريق' },
+                            home_score: m.home_score || 0,
+                            away_score: m.away_score || 0,
+                            league: { name: m.league || 'دوري غير معروف' },
+                            status: m.status === 'live' ? 'live' : 'finished',
+                            date: m.date || new Date().toISOString()
+                        }));
+                    }
+                    return [];
+                }
+            },
+            {
+                name: 'SportScore',
+                url: 'https://sportscore.com/api/matches/live',
+                type: 'json',
+                priority: 2,
+                parser: (data) => {
+                    if (data && data.matches) {
+                        return data.matches.map(m => ({
+                            home_team: { name: m.home || 'فريق' },
+                            away_team: { name: m.away || 'فريق' },
+                            home_score: m.home_score || 0,
+                            away_score: m.away_score || 0,
+                            league: { name: m.competition || 'دوري غير معروف' },
+                            status: m.status === '1' ? 'live' : 'finished',
+                            date: m.date || new Date().toISOString()
+                        }));
+                    }
+                    return [];
+                }
+            },
+            {
+                name: 'API-Football',
+                url: 'https://api.football-data.org/v4/matches',
+                type: 'json',
+                priority: 3,
+                headers: {
+                    'X-Auth-Token': 'demo' // مجاني للاختبار
+                },
+                parser: (data) => {
+                    if (data && data.matches) {
+                        return data.matches.map(m => ({
+                            home_team: { name: m.homeTeam?.name || 'فريق' },
+                            away_team: { name: m.awayTeam?.name || 'فريق' },
+                            home_score: m.score?.fullTime?.home || 0,
+                            away_score: m.score?.fullTime?.away || 0,
+                            league: { name: m.competition?.name || 'دوري غير معروف' },
+                            status: m.status === 'LIVE' ? 'live' : 'finished',
+                            date: m.utcDate || new Date().toISOString()
+                        }));
+                    }
+                    return [];
+                }
+            }
+        ];
 
         let allMatches = [];
         let autoRefreshInterval = null;
         let currentLeague = 'all';
+        let activeSource = null;
+        let sourceStatus = {};
 
-        // تحميل المباريات
-        async function loadMatches() {
+        // ===== التحقق من صحة المصادر =====
+        async function checkSource(source) {
             try {
-                const container = document.getElementById('matchesContainer');
-                container.innerHTML = `
-                    <div class="loading" style="grid-column: 1 / -1;">
-                        <div class="spinner"></div>
-                        <p>جاري تحميل المباريات...</p>
-                    </div>
-                `;
-
-                const response = await fetch(API_BASE, { headers: API_HEADERS });
-                
-                if (!response.ok) {
-                    throw new Error('فشل في تحميل البيانات');
+                const options = {
+                    method: 'GET',
+                    headers: source.headers || {}
+                };
+                const response = await fetch(source.url, options);
+                if (response.ok) {
+                    return true;
                 }
-
-                const data = await response.json();
-                allMatches = data.results || [];
-
-                if (allMatches.length === 0) {
-                    showEmptyState();
-                } else {
-                    displayMatches(allMatches);
-                }
-
-                // تحديث العنوان
-                document.title = `نتائج المباريات - ${allMatches.length} مباراة | movi.best`;
-            } catch (error) {
-                console.error('خطأ:', error);
-                showError('حدث خطأ في تحميل البيانات. تحقق من رمزك المميز (API Token)');
+                return false;
+            } catch {
+                return false;
             }
         }
 
-        // عرض المباريات
+        // ===== تحديث حالة المصادر في الواجهة =====
+        async function updateSourceStatus() {
+            for (let i = 0; i < SOURCES.length; i++) {
+                const source = SOURCES[i];
+                const dot = document.getElementById(`dot${i + 1}`);
+                const status = document.getElementById(`status${i + 1}`);
+                
+                dot.className = 'status-dot checking';
+                status.textContent = 'جاري التحقق...';
+                
+                const isOnline = await checkSource(source);
+                
+                if (isOnline) {
+                    dot.className = 'status-dot online';
+                    status.textContent = '✅ متصل';
+                    sourceStatus[source.name] = true;
+                } else {
+                    dot.className = 'status-dot offline';
+                    status.textContent = '❌ غير متصل';
+                    sourceStatus[source.name] = false;
+                }
+            }
+        }
+
+        // ===== تحميل المباريات من المصادر (مع نظام Failover) =====
+        async function loadMatches() {
+            const container = document.getElementById('matchesContainer');
+            container.innerHTML = `
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>جاري تحميل المباريات من جميع المصادر...</p>
+                </div>
+            `;
+
+            // تحديث حالة المصادر أولاً
+            await updateSourceStatus();
+
+            // ترتيب المصادر حسب الأولوية
+            const sortedSources = [...SOURCES].sort((a, b) => a.priority - b.priority);
+
+            for (const source of sortedSources) {
+                // تحقق إذا كان المصدر متصل
+                if (!sourceStatus[source.name]) {
+                    console.log(`⏭️ تخطي ${source.name} - غير متصل`);
+                    continue;
+                }
+
+                try {
+                    console.log(`🔄 محاولة جلب البيانات من ${source.name}...`);
+                    
+                    const options = {
+                        method: 'GET',
+                        headers: source.headers || {}
+                    };
+                    
+                    const response = await fetch(source.url, options);
+                    
+                    if (!response.ok) {
+                        console.log(`❌ ${source.name} فشل: ${response.status}`);
+                        continue;
+                    }
+
+                    const data = await response.json();
+                    const matches = source.parser(data);
+
+                    if (matches && matches.length > 0) {
+                        allMatches = matches;
+                        activeSource = source.name;
+                        
+                        // تحديث المصدر النشط في الواجهة
+                        document.getElementById('activeSource').textContent = `✅ ${source.name}`;
+                        document.getElementById('sourceIndicator').style.borderColor = '#2ed573';
+                        
+                        console.log(`✅ نجاح! تم تحميل ${matches.length} مباراة من ${source.name}`);
+                        displayMatches(allMatches);
+                        return; // توقف عند أول مصدر ناجح
+                    }
+                } catch (error) {
+                    console.error(`⚠️ خطأ في ${source.name}:`, error);
+                }
+            }
+
+            // إذا فشلت جميع المصادر
+            console.log('❌ جميع المصادر فشلت!');
+            document.getElementById('activeSource').textContent = '⚠️ لا يوجد مصدر متاح';
+            showError('جميع المصادر غير متاحة حالياً. يرجى المحاولة لاحقاً.');
+        }
+
+        // ===== عرض المباريات =====
         function displayMatches(matches) {
             const container = document.getElementById('matchesContainer');
             
-            if (matches.length === 0) {
-                showEmptyState();
+            if (!matches || matches.length === 0) {
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <div style="font-size: 4rem;">⚽</div>
+                        <h2>لا توجد مباريات</h2>
+                        <p>حاول تحديث الصفحة أو تغيير الفلتر</p>
+                    </div>
+                `;
                 return;
             }
 
             container.innerHTML = matches.map((match, index) => {
-                const homeTeam = match.home_team || { name: 'فريق' };
-                const awayTeam = match.away_team || { name: 'فريق' };
-                const homeScore = match.home_score || 0;
-                const awayScore = match.away_score || 0;
-                const isLive = match.status === 'live' || match.status === 'ongoing';
-                const matchDate = new Date(match.start_date);
-                const formattedDate = matchDate.toLocaleDateString('ar-SA', {
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric',
-                    hour: '2-digit',
-                    minute: '2-digit'
-                });
+                const homeName = match.home_team?.name || 'فريق';
+                const awayName = match.away_team?.name || 'فريق';
+                const homeScore = match.home_score ?? 0;
+                const awayScore = match.away_score ?? 0;
+                const isLive = match.status === 'live' || match.status === 'ongoing' || match.status === '1';
+                const matchDate = new Date(match.date || Date.now());
+                const formattedDate = !isNaN(matchDate.getTime()) 
+                    ? matchDate.toLocaleDateString('ar-SA', {
+                        year: 'numeric',
+                        month: 'short',
+                        day: 'numeric',
+                        hour: '2-digit',
+                        minute: '2-digit'
+                      })
+                    : 'تاريخ غير محدد';
+                const leagueName = match.league?.name || 'دوري غير معروف';
 
                 return `
-                    <div class="match-card" style="animation-delay: ${index * 0.05}s">
+                    <div class="match-card">
                         <div class="match-header">
-                            <div class="match-league">${match.league?.name || 'الدوري'}</div>
+                            <div class="match-league">${leagueName}</div>
                             <div class="match-date">📅 ${formattedDate}</div>
                         </div>
                         <div class="match-content">
                             <div class="teams-container">
                                 <div class="team">
-                                    <div class="team-logo">${homeTeam.name.charAt(0)}</div>
-                                    <div class="team-name">${homeTeam.name}</div>
+                                    <div class="team-logo">${homeName.charAt(0).toUpperCase()}</div>
+                                    <div class="team-name">${homeName}</div>
                                 </div>
                                 <div class="score-container">
                                     <div class="score">${homeScore}</div>
@@ -611,17 +695,17 @@
                                     <div class="score">${awayScore}</div>
                                 </div>
                                 <div class="team">
-                                    <div class="team-logo">${awayTeam.name.charAt(0)}</div>
-                                    <div class="team-name">${awayTeam.name}</div>
+                                    <div class="team-logo">${awayName.charAt(0).toUpperCase()}</div>
+                                    <div class="team-name">${awayName}</div>
                                 </div>
                             </div>
 
                             <div class="match-status">
                                 <span class="status-badge ${isLive ? 'status-live' : ''}">
-                                    ${isLive ? '🔴 مباشر' : '✓ انتهت'}
+                                    ${isLive ? '🔴 مباشر' : '✅ انتهت'}
                                 </span>
                                 <div class="status-time">
-                                    ${isLive ? '⏱️ جاري المباراة' : '✓ المباراة انتهت'}
+                                    ${isLive ? '⏱️ جاري المباراة' : '🏁 المباراة انتهت'}
                                 </div>
                             </div>
                         </div>
@@ -630,81 +714,101 @@
             }).join('');
         }
 
-        // فلترة حسب الدوري
-        function filterByLeague(league) {
+        // ===== فلترة حسب الدوري =====
+        function filterByLeague(league, event) {
             currentLeague = league;
-            document.querySelectorAll('.nav-tab').forEach(tab => tab.classList.remove('active'));
-            event.target.classList.add('active');
             
-            if (league === 'all') {
-                displayMatches(allMatches);
+            document.querySelectorAll('.nav-tab').forEach(tab => tab.classList.remove('active'));
+            if (event?.target) {
+                event.target.classList.add('active');
             } else {
-                const filtered = allMatches.filter(match => {
-                    const leagueName = match.league?.name?.toLowerCase() || '';
-                    return leagueName.includes(league.toLowerCase());
+                document.querySelectorAll('.nav-tab').forEach(tab => {
+                    if (tab.dataset.league === league) {
+                        tab.classList.add('active');
+                    }
                 });
-                displayMatches(filtered);
             }
+            
+            filterMatches();
         }
 
-        // البحث والفلترة
+        // ===== البحث والفلترة =====
         function filterMatches() {
-            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-            const filtered = allMatches.filter(match => {
-                const homeTeam = match.home_team?.name || '';
-                const awayTeam = match.away_team?.name || '';
-                const league = match.league?.name || '';
-                return homeTeam.toLowerCase().includes(searchTerm) ||
-                       awayTeam.toLowerCase().includes(searchTerm) ||
-                       league.toLowerCase().includes(searchTerm);
-            });
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
+            let filtered = [...allMatches];
+
+            // فلترة حسب الدوري
+            if (currentLeague !== 'all') {
+                const leagueMap = {
+                    'champions': ['دوري أبطال أوروبا', 'champions league'],
+                    'premier': ['بريمييرليج', 'premier league'],
+                    'laliga': ['لا ليجا', 'la liga'],
+                    'seriea': ['سيري أ', 'serie a'],
+                    'saudi': ['الدوري السعودي', 'saudi'],
+                    'egypt': ['الدوري المصري', 'egyptian']
+                };
+                const keywords = leagueMap[currentLeague] || [];
+                filtered = filtered.filter(match => {
+                    const leagueName = match.league?.name?.toLowerCase() || '';
+                    return keywords.some(keyword => leagueName.includes(keyword.toLowerCase()));
+                });
+            }
+
+            // فلترة حسب البحث
+            if (searchTerm) {
+                filtered = filtered.filter(match => {
+                    const homeTeam = match.home_team?.name?.toLowerCase() || '';
+                    const awayTeam = match.away_team?.name?.toLowerCase() || '';
+                    const league = match.league?.name?.toLowerCase() || '';
+                    return homeTeam.includes(searchTerm) || 
+                           awayTeam.includes(searchTerm) || 
+                           league.includes(searchTerm);
+                });
+            }
+
             displayMatches(filtered);
         }
 
-        // التحديث التلقائي
+        // ===== التحديث التلقائي =====
         function toggleAutoRefresh() {
             if (autoRefreshInterval) {
                 clearInterval(autoRefreshInterval);
                 autoRefreshInterval = null;
-                alert('تم إيقاف التحديث التلقائي');
+                alert('⏹️ تم إيقاف التحديث التلقائي');
             } else {
-                autoRefreshInterval = setInterval(loadMatches, 30000);
+                autoRefreshInterval = setInterval(() => {
+                    loadMatches();
+                }, 30000);
                 loadMatches();
-                alert('تم تفعيل التحديث التلقائي كل 30 ثانية');
+                alert('⏱️ تم تفعيل التحديث التلقائي كل 30 ثانية');
             }
         }
 
-        // رسالة الخطأ
+        // ===== رسائل الخطأ =====
         function showError(message) {
             const container = document.getElementById('matchesContainer');
             container.innerHTML = `
-                <div class="error-message" style="grid-column: 1 / -1;">
-                    <strong>⚠️ خطأ:</strong> ${message}
+                <div class="error-message">
+                    <strong>⚠️ ${message}</strong>
                 </div>
             `;
         }
 
-        // الحالة الفارغة
-        function showEmptyState() {
-            const container = document.getElementById('matchesContainer');
-            container.innerHTML = `
-                <div style="grid-column: 1 / -1; text-align: center; padding: 60px 20px; color: white;">
-                    <div style="font-size: 4rem; margin-bottom: 20px;">⚽</div>
-                    <h2>لا توجد مباريات</h2>
-                    <p>حاول البحث عن فريق أو دوري آخر</p>
-                </div>
-            `;
-        }
-
-        // التحميل الأولي
-        window.addEventListener('load', loadMatches);
-
-        // تحسينات الأداء
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/sw.js').catch(() => {
-                // Service Worker غير متاح
+        // ===== تحميل البيانات مبدئياً =====
+        document.addEventListener('DOMContentLoaded', function() {
+            // ربط أزرار التصفية
+            document.querySelectorAll('.nav-tab').forEach(tab => {
+                tab.addEventListener('click', function(e) {
+                    filterByLeague(this.dataset.league, e);
+                });
             });
-        }
+
+            // تحميل المباريات
+            loadMatches();
+
+            // تحديث حالة المصادر كل دقيقة
+            setInterval(updateSourceStatus, 60000);
+        });
     </script>
 </body>
     </html>
